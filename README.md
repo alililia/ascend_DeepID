@@ -197,32 +197,32 @@ Valid dataset accuracy: 0.9683
 
 ### Training Performance
 
-| Parameters                 | Ascend 910                                                  ||
-| -------------------------- | ----------------------------------------------------------- |---|
-| Model Version              | DeepID                                                      |DeepID|
-| Resource                   | Ascend                                                      ||
-| uploaded Date              | 11/04/2021 (month/day/year)                                 |11/18/2021|
-| MindSpore Version          | 1.3.1                                                       |1.5.0|
-| Dataset                    | Youtube Face                                                |Youtube Face|
-| Training Parameters        | epochs=200, batch_size=1024, lr=0.0001                      |epochs=200, batch_size=2048, lr=0.0001|
-| Optimizer                  | Adam                                                        |Adam|
-| outputs                    | Accuracy = 99.18%                                           |Accuracy = 99.24%|
-| Speed                      | 1pc: 900 ms/step;                                           |1pc: 1250 ms/step 8pc:290 ms/step|
-| Total time                 | 1pc: 3h6s;                                                  |1pc: 4:44:52 8pc:0:50:23|
-| Parameters (M)             | 4.56  M                                                     |4.56  M   |
-| Checkpoint for Fine tuning | 2.03  M (.ckpt file)                                        |2.03  M (.ckpt file)   |
+| Parameters                 | Ascend 910                                                  |
+| -------------------------- | ----------------------------------------------------------- |
+| Model Version              | DeepID                                                      |
+| Resource                   | Ascend                                                      |
+| uploaded Date              | 11/04/2021 (month/day/year)                                 |
+| MindSpore Version          | 1.3.1                                                       |
+| Dataset                    | Youtube Face                                                |
+| Training Parameters        | epochs=200, batch_size=1024, lr=0.0001                      |
+| Optimizer                  | Adam                                                        |
+| outputs                    | Accuracy = 99.18%                                           |
+| Speed                      | 1pc: 900 ms/step;                                           |
+| Total time                 | 1pc: 3h6s;                                                  |
+| Parameters (M)             | 4.56  M                                                     |
+| Checkpoint for Fine tuning | 2.03  M (.ckpt file)                                        |
 
 ### Inference Performance
 
-| Parameters          | Ascend 910                      ||
-| ------------------- | ---------------------------     |---|
-| Model Version       | DeepID                          |DeepID|
-| Resource            | Ascend                          ||
-| Uploaded Date       | 11/04/2021 (month/day/year)     |11/18/2021|
-| MindSpore Version   | 1.3.1                           |1.5.0|
-| Dataset             | Youtube Face                    |Youtube Face|
-| batch_size          | 512                             |256|
-| outputs             | Accuracy = 96.83%               |Accuracy = 95.05%|
+| Parameters          | Ascend 910                      |
+| ------------------- | ---------------------------     |
+| Model Version       | DeepID                          |
+| Resource            | Ascend                          |
+| Uploaded Date       | 11/04/2021 (month/day/year)     |
+| MindSpore Version   | 1.3.1                           |
+| Dataset             | Youtube Face                    |
+| batch_size          | 512                             |
+| outputs             | Accuracy = 96.83%               |
 
 | Parameters          | Ascend 310                      |
 | ------------------- | ---------------------------     |
