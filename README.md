@@ -134,17 +134,7 @@ bash run_standalone_train_ascend.sh [DEVICE_NUM] [DEVICE_ID]
 bash run_distribute_train.sh [DEVICE_NUM] [DISTRIBUTE] [RANK_TABLE_FILE]
 ```
 
-Train on 
 
-```shell
-# train standalone
-bash run_standalone_train_.sh [DEVICE_ID] [DATA_DIR]
-for example: bash run_standalone_train_.sh 0 ./data
-
-# train distribute
-bash run_distribute_train_.sh [DEVICE_NUM] [CUDA_VISIBLE_DEVICES(0,1,2,3,4,5,6,7)] [DATA_DIR]
-for example: bash run_distribute_train_.sh 8 0,1,2,3,4,5,6,7 /home/DeepID/data
-```
 
 ## [Prediction Process](#Contents)
 
@@ -175,13 +165,7 @@ bash run_infer_310.sh [MINDIR_PATH] [DATA_PATH] [DEVICE_ID]
 - `DEVICE_ID` Optional, default 0
 
 =======
-Eval on 
 
-```shell
-# Evaluation on 
-bash eval_.sh [DEVICE_ID] [CHECKPOINTPATH] [DATA_DIR] [MODE(valid,test)]
-for example: bash eval_.sh 0 /home/DeepID.ckpt /home/DeepID/data valid
-```
 
 # [Result](#Contents)
 
